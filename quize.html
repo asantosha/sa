@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Quiz</title>
+    <style>
+        .correct {
+            color: rgb(67, 241, 28);
+        }
+        .incorrect {
+            color: rgb(223, 20, 20);
+        }
+        body{
+            background-color: rgba(46, 241, 150, 0.146);
+            
+        }
+        p{
+            background-color: rgba(255, 127, 255, 0.167);
+            font-size: bold;
+            font-style: italic;
+            color: chocolate;
+        }
+        
+        .div a{
+            text-decoration: none;
+            font-size: 25px;
+           
+            color: rgb(0, 0, 0);
+
+        }
+        .div a:hover{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML and CSS Quiz</h1>
+    <div class="div">
+        <a href="index.html">Home</a>
+    </div>
+    <form id="quizForm">
+        <!-- Question 1 -->
+        <div>
+            <p>1. What does HTML stand for?</p>
+            <input type="radio" id="q1a1" name="q1" value="a"><label for="q1a1">Hyper Text Markup Language</label><br>
+            <input type="radio" id="q1a2" name="q1" value="b"><label for="q1a2">Home Tool Markup Language</label><br>
+            <input type="radio" id="q1a3" name="q1" value="c"><label for="q1a3">Hyperlinks and Text Markup Language</label><br>
+            <input type="radio" id="q1a4" name="q1" value="d"><label for="q1a4">Hyperlinking Text Markup Language</label><br>
+            <button type="button" onclick="checkAnswer('q1', 'a')">Submit</button>
+        </div>
+        
+        <!-- Question 2 -->
+        <div>
+            <p>2. Which HTML element is used to define a paragraph?</p>
+            <input type="radio" id="q2a1" name="q2" value="a"><label for="q2a1">&lt;p&gt;</label><br>
+            <input type="radio" id="q2a2" name="q2" value="b"><label for="q2a2">&lt;para&gt;</label><br>
+            <input type="radio" id="q2a3" name="q2" value="c"><label for="q2a3">&lt;paragraph&gt;</label><br>
+            <input type="radio" id="q2a4" name="q2" value="d"><label for="q2a4">&lt;text&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q2', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 3 -->
+        <div>
+            <p>3. Which attribute is used to provide a unique identifier to an HTML element?</p>
+            <input type="radio" id="q3a1" name="q3" value="a"><label for="q3a1">class</label><br>
+            <input type="radio" id="q3a2" name="q3" value="b"><label for="q3a2">id</label><br>
+            <input type="radio" id="q3a3" name="q3" value="c"><label for="q3a3">name</label><br>
+            <input type="radio" id="q3a4" name="q3" value="d"><label for="q3a4">key</label><br>
+            <button type="button" onclick="checkAnswer('q3', 'b')">Submit</button>
+        </div>
+        
+        <!-- Question 4 -->
+        <div>
+            <p>4. What does CSS stand for?</p>
+            <input type="radio" id="q4a1" name="q4" value="a"><label for="q4a1">Cascading Style Sheets</label><br>
+            <input type="radio" id="q4a2" name="q4" value="b"><label for="q4a2">Creative Style Sheets</label><br>
+            <input type="radio" id="q4a3" name="q4" value="c"><label for="q4a3">Computer Style Sheets</label><br>
+            <input type="radio" id="q4a4" name="q4" value="d"><label for="q4a4">Colorful Style Sheets</label><br>
+            <button type="button" onclick="checkAnswer('q4', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 5 -->
+        <div>
+            <p>5. Which HTML element is used to define the title of a document?</p>
+            <input type="radio" id="q5a1" name="q5" value="a"><label for="q5a1">&lt;meta&gt;</label><br>
+            <input type="radio" id="q5a2" name="q5" value="b"><label for="q5a2">&lt;head&gt;</label><br>
+            <input type="radio" id="q5a3" name="q5" value="c"><label for="q5a3">&lt;title&gt;</label><br>
+            <input type="radio" id="q5a4" name="q5" value="d"><label for="q5a4">&lt;header&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q5', 'c')">Submit</button>
+        </div>
+
+        <!-- Question 6 -->
+        <div>
+            <p>6. Which HTML element is used for the largest heading?</p>
+            <input type="radio" id="q6a1" name="q6" value="a"><label for="q6a1">&lt;h6&gt;</label><br>
+            <input type="radio" id="q6a2" name="q6" value="b"><label for="q6a2">&lt;h1&gt;</label><br>
+            <input type="radio" id="q6a3" name="q6" value="c"><label for="q6a3">&lt;head&gt;</label><br>
+            <input type="radio" id="q6a4" name="q6" value="d"><label for="q6a4">&lt;heading&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q6', 'b')">Submit</button>
+        </div>
+
+        <!-- Question 7 -->
+        <div>
+            <p>7. Which CSS property controls the text size?</p>
+            <input type="radio" id="q7a1" name="q7" value="a"><label for="q7a1">font-size</label><br>
+            <input type="radio" id="q7a2" name="q7" value="b"><label for="q7a2">text-size</label><br>
+            <input type="radio" id="q7a3" name="q7" value="c"><label for="q7a3">font-style</label><br>
+            <input type="radio" id="q7a4" name="q7" value="d"><label for="q7a4">text-style</label><br>
+            <button type="button" onclick="checkAnswer('q7', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 8 -->
+        <div>
+            <p>8. How can you make a numbered list?</p>
+            <input type="radio" id="q8a1" name="q8" value="a"><label for="q8a1">&lt;dl&gt;</label><br>
+            <input type="radio" id="q8a2" name="q8" value="b"><label for="q8a2">&lt;ul&gt;</label><br>
+            <input type="radio" id="q8a3" name="q8" value="c"><label for="q8a3">&lt;list&gt;</label><br>
+            <input type="radio" id="q8a4" name="q8" value="d"><label for="q8a4">&lt;ol&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q8', 'd')">Submit</button>
+        </div>
+
+        <!-- Question 9 -->
+        <div>
+            <p>9. Which HTML element is used to define important text?</p>
+            <input type="radio" id="q9a1" name="q9" value="a"><label for="q9a1">&lt;b&gt;</label><br>
+            <input type="radio" id="q9a2" name="q9" value="b"><label for="q9a2">&lt;important&gt;</label><br>
+            <input type="radio" id="q9a3" name="q9" value="c"><label for="q9a3">&lt;i&gt;</label><br>
+            <input type="radio" id="q9a4" name="q9" value="d"><label for="q9a4">&lt;strong&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q9', 'd')">Submit</button>
+        </div>
+
+        <!-- Question 10 -->
+        <div>
+            <p>10. Which CSS property is used to change the text color of an element?</p>
+            <input type="radio" id="q10a1" name="q10" value="a"><label for="q10a1">text-color</label><br>
+            <input type="radio" id="q10a2" name="q10" value="b"><label for="q10a2">fgcolor</label><br>
+            <input type="radio" id="q10a3" name="q10" value="c"><label for="q10a3">color</label><br>
+            <input type="radio" id="q10a4" name="q10" value="d"><label for="q10a4">font-color</label><br>
+            <button type="button" onclick="checkAnswer('q10', 'c')">Submit</button>
+        </div>
+
+        <!-- Question 11 -->
+        <div>
+            <p>11. Which CSS property is used to change the font of an element?</p>
+            <input type="radio" id="q11a1" name="q11" value="a"><label for="q11a1">font-family</label><br>
+            <input type="radio" id="q11a2" name="q11" value="b"><label for="q11a2">font-style</label><br>
+            <input type="radio" id="q11a3" name="q11" value="c"><label for="q11a3">font-weight</label><br>
+            <input type="radio" id="q11a4" name="q11" value="d"><label for="q11a4">font-color</label><br>
+            <button type="button" onclick="checkAnswer('q11', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 12 -->
+        <div>
+            <p>12. Which CSS property controls the text alignment?</p>
+            <input type="radio" id="q12a1" name="q12" value="a"><label for="q12a1">text-align</label><br>
+            <input type="radio" id="q12a2" name="q12" value="b"><label for="q12a2">align</label><br>
+            <input type="radio" id="q12a3" name="q12" value="c"><label for="q12a3">float</label><br>
+            <input type="radio" id="q12a4" name="q12" value="d"><label for="q12a4">text-format</label><br>
+            <button type="button" onclick="checkAnswer('q12', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 13 -->
+        <div>
+            <p>13. How do you make each word in a text start with a capital letter?</p>
+            <input type="radio" id="q13a1" name="q13" value="a"><label for="q13a1">text-transform:capitalize</label><br>
+            <input type="radio" id="q13a2" name="q13" value="b"><label for="q13a2">text-transform:uppercase</label><br>
+            <input type="radio" id="q13a3" name="q13" value="c"><label for="q13a3">text-transform:lowercase</label><br>
+            <input type="radio" id="q13a4" name="q13" value="d"><label for="q13a4">You can't do that with CSS</label><br>
+            <button type="button" onclick="checkAnswer('q13', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 14 -->
+        <div>
+            <p>14. How do you select an element with id "demo"?</p>
+            <input type="radio" id="q14a1" name="q14" value="a"><label for="q14a1">#demo</label><br>
+            <input type="radio" id="q14a2" name="q14" value="b"><label for="q14a2">.demo</label><br>
+            <input type="radio" id="q14a3" name="q14" value="c"><label for="q14a3">demo</label><br>
+            <input type="radio" id="q14a4" name="q14" value="d"><label for="q14a4">*demo</label><br>
+            <button type="button" onclick="checkAnswer('q14', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 15 -->
+        <div>
+            <p>15. How do you select elements with class name "test"?</p>
+            <input type="radio" id="q15a1" name="q15" value="a"><label for="q15a1">*test</label><br>
+            <input type="radio" id="q15a2" name="q15" value="b"><label for="q15a2">#test</label><br>
+            <input type="radio" id="q15a3" name="q15" value="c"><label for="q15a3">.test</label><br>
+            <input type="radio" id="q15a4" name="q15" value="d"><label for="q15a4">test</label><br>
+            <button type="button" onclick="checkAnswer('q15', 'c')">Submit</button>
+        </div>
+
+        <!-- Question 16 -->
+        <div>
+            <p>16. Which is the correct CSS syntax?</p>
+            <input type="radio" id="q16a1" name="q16" value="a"><label for="q16a1">body:color=black;</label><br>
+            <input type="radio" id="q16a2" name="q16" value="b"><label for="q16a2">{body:color=black;}</label><br>
+            <input type="radio" id="q16a3" name="q16" value="c"><label for="q16a3">body {color: black;}</label><br>
+            <input type="radio" id="q16a4" name="q16" value="d"><label for="q16a4">{body;color:black;}</label><br>
+            <button type="button" onclick="checkAnswer('q16', 'c')">Submit</button>
+        </div>
+
+        <!-- Question 17 -->
+        <div>
+            <p>17. How do you make the text bold?</p>
+            <input type="radio" id="q17a1" name="q17" value="a"><label for="q17a1">font-weight:bold;</label><br>
+            <input type="radio" id="q17a2" name="q17" value="b"><label for="q17a2">text-weight:bold;</label><br>
+            <input type="radio" id="q17a3" name="q17" value="c"><label for="q17a3">font:bold;</label><br>
+            <input type="radio" id="q17a4" name="q17" value="d"><label for="q17a4">style:bold;</label><br>
+            <button type="button" onclick="checkAnswer('q17', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 18 -->
+        <div>
+            <p>18. How do you display hyperlinks without an underline?</p>
+            <input type="radio" id="q18a1" name="q18" value="a"><label for="q18a1">a {text-decoration:none;}</label><br>
+            <input type="radio" id="q18a2" name="q18" value="b"><label for="q18a2">a {underline:none;}</label><br>
+            <input type="radio" id="q18a3" name="q18" value="c"><label for="q18a3">a {decoration:no-underline;}</label><br>
+            <input type="radio" id="q18a4" name="q18" value="d"><label for="q18a4">a {text-underline:none;}</label><br>
+            <button type="button" onclick="checkAnswer('q18', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 19 -->
+        <div>
+            <p>19. How do you make a list that lists its items with squares?</p>
+            <input type="radio" id="q19a1" name="q19" value="a"><label for="q19a1">list-type:square;</label><br>
+            <input type="radio" id="q19a2" name="q19" value="b"><label for="q19a2">list-style-type:square;</label><br>
+            <input type="radio" id="q19a3" name="q19" value="c"><label for="q19a3">list:square;</label><br>
+            <input type="radio" id="q19a4" name="q19" value="d"><label for="q19a4">list-style:square;</label><br>
+            <button type="button" onclick="checkAnswer('q19', 'b')">Submit</button>
+        </div>
+
+        <!-- Question 20 -->
+        <div>
+            <p>20. How do you insert a comment in a CSS file?</p>
+            <input type="radio" id="q20a1" name="q20" value="a"><label for="q20a1">/* this is a comment */</label><br>
+            <input type="radio" id="q20a2" name="q20" value="b"><label for="q20a2">// this is a comment //</label><br>
+            <input type="radio" id="q20a3" name="q20" value="c"><label for="q20a3">' this is a comment</label><br>
+            <input type="radio" id="q20a4" name="q20" value="d"><label for="q20a4">// this is a comment</label><br>
+            <button type="button" onclick="checkAnswer('q20', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 21 -->
+        <div>
+            <p>21. Which property is used to change the background color?</p>
+            <input type="radio" id="q21a1" name="q21" value="a"><label for="q21a1">color</label><br>
+            <input type="radio" id="q21a2" name="q21" value="b"><label for="q21a2">background-color</label><br>
+            <input type="radio" id="q21a3" name="q21" value="c"><label for="q21a3">bgcolor</label><br>
+            <input type="radio" id="q21a4" name="q21" value="d"><label for="q21a4">bg-color</label><br>
+            <button type="button" onclick="checkAnswer('q21', 'b')">Submit</button>
+        </div>
+
+        <!-- Question 22 -->
+        <div>
+            <p>22. Which property is used to change the left margin of an element?</p>
+            <input type="radio" id="q22a1" name="q22" value="a"><label for="q22a1">padding-left</label><br>
+            <input type="radio" id="q22a2" name="q22" value="b"><label for="q22a2">margin-left</label><br>
+            <input type="radio" id="q22a3" name="q22" value="c"><label for="q22a3">left-margin</label><br>
+            <input type="radio" id="q22a4" name="q22" value="d"><label for="q22a4">margin</label><br>
+            <button type="button" onclick="checkAnswer('q22', 'b')">Submit</button>
+        </div>
+
+        <!-- Question 23 -->
+        <div>
+            <p>23. Which HTML attribute is used to define inline styles?</p>
+            <input type="radio" id="q23a1" name="q23" value="a"><label for="q23a1">class</label><br>
+            <input type="radio" id="q23a2" name="q23" value="b"><label for="q23a2">style</label><br>
+            <input type="radio" id="q23a3" name="q23" value="c"><label for="q23a3">styles</label><br>
+            <input type="radio" id="q23a4" name="q23" value="d"><label for="q23a4">font</label><br>
+            <button type="button" onclick="checkAnswer('q23', 'b')">Submit</button>
+        </div>
+
+        <!-- Question 24 -->
+        <div>
+            <p>24. How do you make a list that lists its items with numbers?</p>
+            <input type="radio" id="q24a1" name="q24" value="a"><label for="q24a1">&lt;ol&gt;</label><br>
+            <input type="radio" id="q24a2" name="q24" value="b"><label for="q24a2">&lt;ul&gt;</label><br>
+            <input type="radio" id="q24a3" name="q24" value="c"><label for="q24a3">&lt;dl&gt;</label><br>
+            <input type="radio" id="q24a4" name="q24" value="d"><label for="q24a4">&lt;list&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q24', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 25 -->
+        <div>
+            <p>25. How do you insert a comment in an HTML file?</p>
+            <input type="radio" id="q25a1" name="q25" value="a"><label for="q25a1">&lt;!-- this is a comment --&gt;</label><br>
+            <input type="radio" id="q25a2" name="q25" value="b"><label for="q25a2">// this is a comment //</label><br>
+            <input type="radio" id="q25a3" name="q25" value="c"><label for="q25a3">' this is a comment</label><br>
+            <input type="radio" id="q25a4" name="q25" value="d"><label for="q25a4">&lt;comment&gt; this is a comment &lt;/comment&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q25', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 26 -->
+        <div>
+            <p>26. Which HTML element is used to specify a footer for a document or section?</p>
+            <input type="radio" id="q26a1" name="q26" value="a"><label for="q26a1">&lt;footer&gt;</label><br>
+            <input type="radio" id="q26a2" name="q26" value="b"><label for="q26a2">&lt;bottom&gt;</label><br>
+            <input type="radio" id="q26a3" name="q26" value="c"><label for="q26a3">&lt;section&gt;</label><br>
+            <input type="radio" id="q26a4" name="q26" value="d"><label for="q26a4">&lt;foot&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q26', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 27 -->
+        <div>
+            <p>27. Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?</p>
+            <input type="radio" id="q27a1" name="q27" value="a"><label for="q27a1">alt</label><br>
+            <input type="radio" id="q27a2" name="q27" value="b"><label for="q27a2">title</label><br>
+            <input type="radio" id="q27a3" name="q27" value="c"><label for="q27a3">src</label><br>
+            <input type="radio" id="q27a4" name="q27" value="d"><label for="q27a4">href</label><br>
+            <button type="button" onclick="checkAnswer('q27', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 28 -->
+        <div>
+            <p>28. In HTML, onblur and onfocus are:</p>
+            <input type="radio" id="q28a1" name="q28" value="a"><label for="q28a1">Style attributes</label><br>
+            <input type="radio" id="q28a2" name="q28" value="b"><label for="q28a2">Event attributes</label><br>
+            <input type="radio" id="q28a3" name="q28" value="c"><label for="q28a3">HTML elements</label><br>
+            <input type="radio" id="q28a4" name="q28" value="d"><label for="q28a4">CSS properties</label><br>
+            <button type="button" onclick="checkAnswer('q28', 'b')">Submit</button>
+        </div>
+
+        <!-- Question 29 -->
+        <div>
+            <p>29. Which HTML element is used to define a table?</p>
+            <input type="radio" id="q29a1" name="q29" value="a"><label for="q29a1">&lt;table&gt;</label><br>
+            <input type="radio" id="q29a2" name="q29" value="b"><label for="q29a2">&lt;tab&gt;</label><br>
+            <input type="radio" id="q29a3" name="q29" value="c"><label for="q29a3">&lt;td&gt;</label><br>
+            <input type="radio" id="q29a4" name="q29" value="d"><label for="q29a4">&lt;tables&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q29', 'a')">Submit</button>
+        </div>
+
+        <!-- Question 30 -->
+        <div>
+            <p>30. How can you make a numbered list?</p>
+            <input type="radio" id="q30a1" name="q30" value="a"><label for="q30a1">&lt;dl&gt;</label><br>
+            <input type="radio" id="q30a2" name="q30" value="b"><label for="q30a2">&lt;ol&gt;</label><br>
+            <input type="radio" id="q30a3" name="q30" value="c"><label for="q30a3">&lt;list&gt;</label><br>
+            <input type="radio" id="q30a4" name="q30" value="d"><label for="q30a4">&lt;ul&gt;</label><br>
+            <button type="button" onclick="checkAnswer('q30', 'b')">Submit</button>
+        </div>
+
+    </div>
+
+    <script>
+        function checkAnswer(question, correctAnswer) {
+            const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+            if (selectedOption) {
+                const allOptions = document.querySelectorAll(`input[name="${question}"]`);
+                allOptions.forEach(option => {
+                    const label = option.nextElementSibling;
+                    if (option.value === correctAnswer) {
+                        label.classList.remove('incorrect');
+                        label.classList.add('correct');
+                    } else {
+                        label.classList.remove('correct');
+                        label.classList.add('incorrect');
+                    }
+                });
+    
+                if (selectedOption.value === correctAnswer) {
+                    alert('Correct!');
+                } else {
+                    alert('Incorrect!');
+                }
+            } else {
+                alert('Please select an answer.');
+            }
+        }
+    </script>
+</body>
+</html>
